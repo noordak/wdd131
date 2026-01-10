@@ -1,0 +1,130 @@
+/* Base CSS file */
+
+
+/*   Base Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+
+/*  Header & Navigation */
+
+header {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  margin-bottom: 2rem;
+}
+
+
+
+/* span in header displayed as block */
+#course-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+/* Flexbox navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #0055aa;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect with strong contrast */
+nav a:hover {
+  background-color: #ffffff;
+  color: #003366;
+}
+
+
+
+/*  Main Content */
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Main heading */
+main h1 {
+  grid-column: 1 / -1; /* span all grid columns */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid layout for cards */
+
+.main-heading {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Card styling */
+.card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 0.75rem 0;
+}
+
+/* Footer */
+
+footer {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
