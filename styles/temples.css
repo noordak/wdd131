@@ -34,6 +34,30 @@ header h2 {
   font-family: 'Playfair Display', serif;
 }
 
+/* ---------- Hamburger Icon ---------- */
+
+#menuButton {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: none;
+}
+
+nav ul.open {
+  display: block;
+}
+
+nav li {
+  padding: 0.5rem 0;
+}
+
+
 /* ---------- Navigation (Flexbox) ---------- */
 nav {
   display: flex;
