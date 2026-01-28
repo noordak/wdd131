@@ -5,9 +5,16 @@
   font-family: Arial, sans-serif;
 }
 
+:root {
+  --primary-green: #1f7a1f;
+  --panel-bg: rgba(255, 255, 255, 0.85);
+  --text-dark: #102a43;
+  --accent: #2dd4bf;
+}
+
 body {
   background-color: #f4f6f8;
-  color: #334155;
+  color: var(--text-dark);
 }
 
 /*header*/
@@ -16,6 +23,11 @@ header {
   color: #ffffff;
   padding: 1.5rem;
   text-align: center;
+}
+
+header,
+footer {
+  background-color: var(--primary-green);
 }
 
 header h1 {
@@ -39,6 +51,18 @@ h2, h3 {
   transition: color 0.2s ease;
   
 }
+
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: var(--accent);
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
 section {
   background-color: #ffffff;
   padding: 1rem;
@@ -135,11 +159,7 @@ footer {
     padding: 2rem;
     min-height: 500px;
   }*/
-  .panel {
-    position: absolute;
-    width: 260px;
-  }
-
+ 
 
 
 /*update for image fix*/
@@ -167,16 +187,6 @@ footer {
 }
 
 /* Panels on top of image */
-.panel {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 1rem;
-  border-radius: 8px;
-  max-width: 100%;
-
-  position: relative;
-  z-index: 2;
-
-}
 
 /* Left panel */
 .data {
@@ -186,4 +196,14 @@ footer {
 /* Right panel */
 .weather {
   align-self: flex-start;
+}
+
+.panel {
+  width: 260px;
+  background-color: var(--panel-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
 }

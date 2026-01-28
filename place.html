@@ -23,8 +23,8 @@
     <main class="hero"> <!-- data -->
 
          <picture class="hero-image">
-            <source media="(min-width: 768px)" srcset="images/place-hawaii.jpg">
-            <img src="images/place-hawaii-2.jpg" alt="Scenic view of Hawaii">
+            <source media="(min-width: 768px)" srcset="images/place-hawaii.webp.webp">
+            <img src="images/place-hawaii-2.webp.webp" alt="Scenic view of Hawaii">
         </picture>
 
         <section class="panel data">
@@ -44,26 +44,24 @@
       
     </section> -->
 
-    <!-- weather old section 
+   
+
         <section class="panel weather">
-            <h3>Weather</h3>
+            <h2>Weather &#9728</h2>
+            <!-- Graders didn't like this, try switching  back to old style  
+            <p><strong>Temperature (°F):</strong> <input type="number" id="temperature" value="75"></p>
+            <p><strong>Conditions:</strong><input type="text" id="conditions" value="Sunny"></p>
+            <p><strong>Wind (mph):</strong><input type="number" id="wind" value="10"></p>
+            <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p> -->
             <p><strong>Temperature:</strong> 82 Degrees</p>
             <p><strong>Conditions:</strong> Partially Cloudy</p>
             <p><strong>Wind:</strong> 12MPH</p>
             <p><strong>Wind Chill:</strong> N/A</p>
-        </section>-->
-
-        <section class="panel weather">
-            <h2>Weather</h2>
-            <p><strong>Temperature (°F):</strong> <input type="number" id="temperature" value="75"></p>
-            <p><strong>Conditions:</strong><input type="text" id="conditions" value="Sunny"></p>
-            <p><strong>Wind (mph):</strong><input type="number" id="wind" value="10"></p>
-            <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
         </section>
 </main>
  
 <footer>
-    <p>&copy2026 Kevin Noorda Hawaii; <span id="currentYear"></span></p>
+    <p> &copy; <span id="currentYear"></span> Kevin Noorda, Hawaii </p>
     <p id="lastModified"></p>
 </footer>
 
@@ -73,12 +71,3 @@
 
 
 </html>
-
-<!-- Still need image to occupy more space and h2 h3 to be smaller and on top of image.
-    -might need to change pic to hero image and do a wrapper around it.    
-
- Also still need to meet this requirement The "hero" images must utilize the srcset responsive design method to provide different images based 
- on screen size. You can choose to implement this requirement by using either the picture element or a basic img approach. Ensure that the images 
- subjects and dimensions support the page's subject, design, and layout. 
-
- And also still need wind chill equation-->
