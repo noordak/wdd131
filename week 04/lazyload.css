@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;      
+}
+
+
+h1 {
+    text-align: center;
+    
+}   
+
+main {
+    margin: 0  auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    background: black;
+}
