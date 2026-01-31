@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WDD 131 - Picture Album - Kevin Noorda</title>
+
+  <meta name="description" content="WDD 131 – filtered-temples, Kevin Noorda. HTML, CSS, JavaScript fundamentals and dynamic web development concepts.">
+  <meta name="author" content="Kevin Noorda">
+
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h2>Temple Picture Album</h2>
+
+    <!-- Hamburger button -->
+    <button id="menuButton" aria-label="Toggle menu">
+      ☰
+    </button>
+
+    <nav id="navMenu">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temples</h1>
+    <section id="templeCards"></section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> | Temple Album</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
