@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Form Project</title>
+    <title>Product Review</title>
 
-    <meta name="description" content="WDD 131 – Form project. Kevin Noorda. HTML, CSS, JavaScript fundamentals and dynamic web development concepts.">
+    <meta name="description" content="WDD 131 – Form project, Product Review with radio and checklists. Kevin Noorda. HTML, CSS, JavaScript fundamentals and dynamic web development concepts.">
     <meta name="author" content="Kevin Noorda">
 
     <link rel="stylesheet" href="styles/form.css">
@@ -32,6 +32,7 @@
         <option value="" disabled selected>Select a Product ...</option>
       </select>
       
+      <!--Original overall rating  
       <fieldset class="rating">
         <legend>Overall Rating</legend>
         
@@ -46,12 +47,34 @@
         &star;&star;&star;&star;&star;
         <label><input type="radio" name="rating" value="5"></label>
       </fieldset>
+    -->
+
+      <!---New overall rating-->
+      <fieldset class="rating">
+  <legend>Overall Rating</legend>
+
+  <input type="radio" id="rating1" name="rating" value="1" required>
+  <label for="rating1">&star;</label>
+
+  <input type="radio" id="rating2" name="rating" value="2" required>
+  <label for="rating2">&star;&star;</label>
+
+  <input type="radio" id="rating3" name="rating" value="3" required>
+  <label for="rating3">&star;&star;&star;</label>
+
+  <input type="radio" id="rating4" name="rating" value="4" required>
+  <label for="rating4">&star;&star;&star;&star;</label>
+
+  <input type="radio" id="rating5" name="rating" value="5" required>
+  <label for="rating5">&star;&star;&star;&star;&star;</label>
+</fieldset>
+      
 
       <label for="installDate">Date of Installation</label>
       <input type="date" id="installDate" name="installDate" required>  
 
 
-      
+      <!--Old useful features
       <fieldset>
         <legend>Which of these were useful features with the product?
          (Check all that apply)
@@ -61,6 +84,26 @@
         <label><input type="checkbox" name="features" value="Ease">Ease of Use</label>
         <label><input type="checkbox" name="features" value="Price">Value for Money</label>
       </fieldset>
+    -->
+      <!-- New checklist format-->
+  <fieldset>
+  <legend>Which of these were useful features with the product?
+    (Check all that apply)
+  </legend>
+
+  <input type="checkbox" id="featureDesign" name="features" value="Design">
+  <label for="featureDesign">Design</label>
+
+  <input type="checkbox" id="featureDurability" name="features" value="Durability">
+  <label for="featureDurability">Durability</label>
+
+  <input type="checkbox" id="featureEase" name="features" value="Ease">
+  <label for="featureEase">Ease of Use</label>
+
+  <input type="checkbox" id="featurePrice" name="features" value="Price">
+  <label for="featurePrice">Value for Money</label>
+</fieldset>
+      
 
       <label for="review">Written Review (optional)</label>
       <textarea id="review" name="review"></textarea>

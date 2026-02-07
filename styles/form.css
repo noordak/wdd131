@@ -89,3 +89,12 @@ footer {
     margin: 0 auto 20px auto ;    
 }
 
+@media (max-width: 600px) {
+  form {
+    padding: 1rem;
+  }
+
+  fieldset {
+    margin-bottom: 1rem;
+  }
+}
