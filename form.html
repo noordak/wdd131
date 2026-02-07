@@ -1,0 +1,84 @@
+<!DOCTYPE html>     
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Form Project</title>
+
+    <meta name="description" content="WDD 131 – Form project. Kevin Noorda. HTML, CSS, JavaScript fundamentals and dynamic web development concepts.">
+    <meta name="author" content="Kevin Noorda">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+<main>
+
+    <header>
+        <h1>PRODUCT REVIEW</h1> 
+    </header>
+    
+    <form method="get" action="review.html">
+
+      <label for="product">Product Name</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+      
+      <fieldset class="rating">
+        <legend>Overall Rating</legend>
+        
+        &star;
+        <label><input type="radio" name="rating" value="1" required></label>
+        &star;&star;
+        <label><input type="radio" name="rating" value="2"></label>
+        &star;&star;&star;
+        <label><input type="radio" name="rating" value="3"></label>
+        &star;&star;&star;&star;
+        <label><input type="radio" name="rating" value="4"></label>
+        &star;&star;&star;&star;&star;
+        <label><input type="radio" name="rating" value="5"></label>
+      </fieldset>
+
+      <label for="installDate">Date of Installation</label>
+      <input type="date" id="installDate" name="installDate" required>  
+
+
+      
+      <fieldset>
+        <legend>Which of these were useful features with the product?
+         (Check all that apply)
+        </legend>
+        <label><input type="checkbox" name="features" value="Design">Design</label>
+        <label><input type="checkbox" name="features" value="Durability">Durability</label>
+        <label><input type="checkbox" name="features" value="Ease">Ease of Use</label>
+        <label><input type="checkbox" name="features" value="Price">Value for Money</label>
+      </fieldset>
+
+      <label for="review">Written Review (optional)</label>
+      <textarea id="review" name="review"></textarea>
+
+      <label for="username">Your Name (optional)</label>
+      <input type="text" id="username" name="username">
+
+        <input type="submit" value="Submit Review">
+
+    </form>
+
+
+    
+    <footer>
+         <p>&copy; Kevin Noorda | Form Project <span id="currentYear"></span></p>
+    <p id="lastModified"></p>
+    </footer>
+</main>   
+</body>
+
+</html>
