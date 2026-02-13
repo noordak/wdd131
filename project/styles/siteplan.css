@@ -196,6 +196,21 @@ h1 {
   max-width: 350px;
 }
 
+/* Hero background variations 
+.hero-home {
+  background-image: url('images/prjct-home3.jpeg');
+}
+
+.hero-history {
+  background-image: url('images/prjct-hero1.jpg');
+}
+
+.hero-specs {
+  background-image: url('images/rich-browninghero.jpg');
+}*/
+
+
+
 .panel:hover {
   color: #2dd4bf;
 }
