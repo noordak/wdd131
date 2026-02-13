@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Site Plan</title>
+
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Siteplan home page. HTML, CSS, JavaScript fundamentals and dynamic web development concepts.">
+    <meta name="author" content="Kevin Noorda">
+
+    
+    <!--<link rel="stylesheet" href="siteplan.css">--> 
+    <!--<script src="siteplan.js" defer></script>-->  
+    
+    <link rel="stylesheet" href="styles/siteplan.css"> 
+    <script src="scripts/siteplan.js" defer></script>  
+    
+</head>
+
+<body>
+    <header class="site-header">
+        
+        <div class="header-top">
+        <img src="images/jetpack-logo.png" alt="website logo" class="logo">
+        <h1>Hello and welcome to my Gravity JetSuit Fanpage!</h1>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="siteplan-history.html">History</a></li>
+                <li><a href="siteplan-specs.html">Specifications</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('images/prjct-hero1.jpg');">
+            <div class="hero-content home">
+                <section class="panel home1">
+                    <p>This is a fanpage dedicated to the Gravity JetSuit. A device that can help individuals fly like Iron Man, or the Mandalorian, or whomever is your favorite science fiction character. Ever had dreams of flying? With the Jetsuit, that can now become a reality!</p>
+                </section>
+
+                <section class="panel home3">
+                    <p>With the Gravity JetSuit, you can experience the thrill of flight in a safe and controlled environment. The suit is equipped with advanced propulsion systems and safety features that make it suitable for both recreational and professional use.</p>
+                </section>
+
+                <section class="panel home2">
+                    <p>(Though with a cost of roughly $440,000-$500,000 per unit, it might be an expensive reality.)</p>
+                </section>
+            </div>
+        </section>
+
+        <section class="auth-section">
+            <h2>Want to stay informed about Gravity JetSuit updates?</h2>
+            <div class="auth-container">
+    <!-- Sign Up Form -->
+           <div class="form-box">
+           <h3>Sign Up</h3>
+           <form>
+            <label for="signup-name">Full Name</label>
+            <input type="text" id="signup-name" required>
+
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" required>
+
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" required>
+
+            <button type="submit">Create Account</button>
+           </form>
+           </div>
+
+    <!-- Sign In Form -->
+        <div class="form-box">
+            <h3>Sign In</h3>
+            <form>
+                <label for="signin-email">Email</label>
+                <input type="email" id="signin-email" required>
+
+                <label for="signin-password">Password</label>
+                <input type="password" id="signin-password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+       </div>
+     </section>
+    </main>
+
+
+     <footer>
+         <p>&copy; Kevin Noorda | WDD131 Project <span id="currentYear"></span></p>
+         <p id="lastModified"></p>
+         <p class="footer-reference">
+        Reference:
+        <a href="https://gravity.co" target="_blank" rel="noopener noreferrer">
+            Gravity Industries Official Website
+        </a>
+    </p>
+    </footer>
+</body>
+</html>    

@@ -1,0 +1,497 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #102a43;
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+
+
+/* Header-previous code for reference 
+.header {
+  background-color: #1f7a1f;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.site-header {
+  background-color: #1f7a1f;
+  text-align: center;
+  padding: 20px;             
+}
+
+.logo {
+  width: 75px;           
+  height: auto;          
+
+.main-nav ul {
+  list-style: none;      
+  padding: 0;
+  margin: 30px 0 0 0;
+
+  display: flex;        
+  justify-content: center; 
+  gap: 20px;             
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+}
+nav {
+  background-color: #1f7a1f;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+*/
+
+
+/* =========================
+   Header UPDATE 12Feb2026
+========================= */
+
+.site-header {
+  background-color: #1f7a1f;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 75px;
+  height: auto;
+}
+
+/* Navigation */
+.main-nav ul {
+  list-style: none;
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.main-nav a:hover {
+  color: #2dd4bf;
+}
+
+h1 {
+  
+  text-align: center;
+}
+
+
+
+/* =========================
+   Hero Section update 12Feb2026
+========================= */
+
+.hero {
+  min-height: 150vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  margin-top: 0;
+  position: relative;
+}
+
+/* Home page: panels centered (default) */
+.hero-content.home {
+  position: relative;
+  bottom: 6rem;
+  left: 12rem;
+  max-width: 400px;
+}
+
+/* History page: panels top-left and bottom-right */
+.hero-content.history {
+  position: relative; /* needed for absolute children */
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content.history .panel.history {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  max-width: 400px;
+}
+
+.hero-content.history .panel.founder {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  max-width: 300px;
+}
+
+
+/* Limit images in specs panels */
+.hero-content.specs .panel img {
+  width: 100%;       /* makes image fit inside panel */
+  max-width: 300px;  /* caps the image size */
+  height: auto;      /* keeps aspect ratio */
+  display: block;
+  margin: 0 auto 1rem auto; /* centers image with spacing below */
+  border-radius: 8px;
+}
+
+/* Specs page: panels staggered diagonally */
+.hero-content.specs {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content.specs .panel.specs1 {
+  position: relative;
+  bottom: 1rem;
+  right: 30rem;
+  max-width: 350px;
+}
+
+.hero-content.specs .panel.specs2 {
+  position: relative;
+  bottom: 11rem;
+  left: 30rem;
+  max-width: 350px;
+}
+
+.panel:hover {
+  color: #2dd4bf;
+}
+
+
+
+/* Hero code for reference 
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  background-image: url('rich-browninghero.jpg');
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2rem;
+}
+
+
+.hero1 {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  background-image: url('prjct-home3.jpeg');
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2rem;
+}
+
+
+
+.hero-content {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero1-content {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero2 {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  background-image: url('prjct-hero1.jpg');
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2rem;
+}
+
+.hero2-content {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+*/
+
+
+
+
+
+
+/* Previous panel code for reference 
+.panel {
+  position: absolute;
+  z-index: 2;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: -5rem 1rem 0 1rem; 
+}
+
+
+.panel.history {
+  align-self: flex-start;
+
+  left: 2rem;
+  top: 12.5rem; 
+}
+
+.panel.founder {
+  align-self: flex-end; 
+  right: 1rem;
+  top: 50rem;
+}
+
+.panel.specs1 {
+  align-self: flex-start;
+   
+  left: 0.1rem;
+  top: 25rem; 
+}
+
+.panel.specs2 {
+  align-self: flex-end; 
+  right: 1rem;
+  top: 27.5rem;
+}
+
+.panel.home1 {
+  align-self: flex-start;
+   
+  left: 35rem;
+  top: 22.5rem; 
+}
+
+.panel.home2 {
+  align-self: flex-end; 
+  right: 28rem;
+  top: 40rem;
+}
+
+.panel img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+.panel h2 {
+  margin-bottom: 0.75rem;
+  color: #1f7a1f;
+  position: relative;
+}
+
+.panel h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #2dd4bf;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+*/
+
+
+.panel {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+  .auth-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-box {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 300px;
+  text-align: left;
+}
+
+.form-box h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-box label {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-box button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #1f7a1f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background-color: #166116;
+}
+
+
+/* Footer */
+footer {
+  background-color: #1f7a1f;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-reference {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.footer-reference a {
+  color: #d4ffd4; /* lighter green/white tint */
+  text-decoration: none;
+}
+
+.footer-reference a:hover {
+  text-decoration: underline;
+}
+
+/* Old code for reference 
+@media screen {
+  .panel {
+    max-width: 300px;
+    padding: 0.75rem;
+  }
+  
+  .panel.history {
+    top: 10rem;
+    left: 1rem;
+  }
+  
+  .panel.founder {
+    top: 15rem;
+    right: 1rem;
+  }
+  
+  .panel.specs1 {
+    top: 20rem;
+    left: 1rem;
+  }
+  
+  .panel.specs2 {
+    top: 22.5rem;
+    right: 1rem;
+  }
+    
+}*/
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .panel {
+    margin: -2rem 1rem 1.5rem 1rem; /* less overlap on small screens */
+    padding: 1rem;
+  }
+}
